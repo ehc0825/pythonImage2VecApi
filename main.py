@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from img2vec_pytorch import Img2Vec
 
 
 class UrlItem(BaseModel):
