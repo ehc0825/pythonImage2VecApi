@@ -3,13 +3,14 @@ from pydantic import BaseModel
 from img2vec_pytorch import Img2Vec
 from PIL import Image
 from io import BytesIO
-from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.applications.resnet50 import ResNet50, decode_predictions
+from tensorflow.keras.preprocessing.image import load_img
 import requests
 import json
 import numpy as np
 from util import jsonParser
 from util import baseModel
+from util import imageParser
 
 UrlItem=baseModel.UrlItem
 app = FastAPI()
@@ -33,10 +34,10 @@ async def urlImageLabel(item: UrlItem):
     model.summary()
     res = requests.get(item_path)
     img = load_img(BytesIO(res.content), target_size=(224, 224))
-    x = img_to_array(img)
-    x = np.expand_dims(x, axis=0)
-    x = preprocess_input(x)
-    preds = model.predict(x)
+    imageProcessor=imageParser.ImageParser
+    modelInput = imageProcessor.imgToModelInput(img)
+    preds = model.predict(modelInput)
     label = decode_predictions(preds, top=3)[0]
     returnjson = json.dumps(label,cls=jsonParser.NumpyEncoder)
     return{"label":returnjson}
+
