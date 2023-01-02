@@ -5,7 +5,7 @@ pythonI mage to Vector Api for Elastic ImageSearch
 ## run
 python3 -m venv venv //파이썬 가상환경 만들기   
 source ./venv/bin/activate //파이썬 가상환경 활성화   
-pip install -r requirements.txt
+pip install -r requirements.txt   
 uvicorn main:app --reload --host=0.0.0.0 --port=29880//29880포트에서 fastapi실행   
 
 
