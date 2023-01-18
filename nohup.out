@@ -1,0 +1,47 @@
+INFO:     Will watch for changes in these directories: ['/Users/hcpc/공부/ElasticsearchIamgeSearch/ImageSearch Python/image2vecPython/pythonImage2VecApi']
+INFO:     Uvicorn running on http://0.0.0.0:29888 (Press CTRL+C to quit)
+INFO:     Started reloader process [25651] using StatReload
+2023-01-15 12:58:42.636291: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [25690]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54616 - "POST /urlImagevector HTTP/1.1" 405 Method Not Allowed
+/Users/hcpc/공부/ElasticsearchIamgeSearch/ImageSearch Python/image2vecPython/pythonImage2VecApi/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/hcpc/공부/ElasticsearchIamgeSearch/ImageSearch Python/image2vecPython/pythonImage2VecApi/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+INFO:     127.0.0.1:54621 - "GET /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.1:54624 - "GET /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.1:57097 - "GET /urlImagevector HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.249.1:57102 - "GET /urlImagevector HTTP/1.1" 422 Unprocessable Entity
+INFO:     192.168.249.1:57112 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.168.249.1:57253 - "POST /urlImagevector HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.249.1:57259 - "POST /urlImagevector HTTP/1.1" 405 Method Not Allowed
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25690]
+2023-01-15 16:37:43.861721: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:     Started server process [34824]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+/Users/hcpc/공부/ElasticsearchIamgeSearch/ImageSearch Python/image2vecPython/pythonImage2VecApi/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/hcpc/공부/ElasticsearchIamgeSearch/ImageSearch Python/image2vecPython/pythonImage2VecApi/venv/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+INFO:     192.168.249.1:57295 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.1:57356 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:42194 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:42214 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:42214 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:42260 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:42520 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:42548 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:42566 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:43102 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:43332 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:43640 - "POST /urlImagevector HTTP/1.1" 200 OK
+INFO:     192.168.249.2:43662 - "POST /urlImagevector HTTP/1.1" 200 OK

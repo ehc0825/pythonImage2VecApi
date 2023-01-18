@@ -15,7 +15,7 @@ from util import imageParser
 UrlItem=baseModel.UrlItem
 app = FastAPI()
 
-@app.get("/urlImagevector")
+@app.post("/urlImagevector")
 async def converUrl(item: UrlItem):
     urlItem=dict(item)
     image_url=(str(urlItem['image_url']))
@@ -26,7 +26,7 @@ async def converUrl(item: UrlItem):
     return {"vector":imageVector.tolist()}
 
 
-@app.get("/urlImageLabel")
+@app.post("/urlImageLabel")
 async def urlImageLabel(item: UrlItem):
     dicted_item=dict(item)
     item_path=str(dicted_item['image_url'])
